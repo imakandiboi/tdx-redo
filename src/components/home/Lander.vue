@@ -1,9 +1,14 @@
 <template>
   <b-container fluid class="bg-custom">
     <b-row class="text-center justify-content-md-center">
-      <b-col  sm="8" class="text-white">
+      <b-col sm="8" class="text-white">
         <div class="header">
-          <div class="mb-4">Find Anything in</div>
+          <div class="mb-4">
+            Find Anything in 
+            <b-button type="submit" style="padding: 0px 6px" variant="secondary"
+              >All Nigeria</b-button
+            >
+          </div>
           <b-form inline class="justify-content-md-center">
             <!-- <label class="sr-only" for="inline-form-input-username"
             >Username</label
