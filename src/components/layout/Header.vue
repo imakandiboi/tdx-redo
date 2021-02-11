@@ -1,6 +1,6 @@
 <template>
   <div>
-    <b-navbar toggleable="lg" type="dark" variant="success">
+    <b-navbar toggleable="lg" type="dark" variant="success" class="shadow" fixed>
       <b-navbar-brand href="#">
         <img
           alt="logo"
@@ -12,7 +12,9 @@
       <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
 
       <b-collapse id="nav-collapse" is-nav>
-        <h4 style="margin-left: 20px; color: rgba(255, 255, 255, 0.5)">Las las we better pass jiji</h4>
+        <h4 style="margin-left: 20px; color: rgba(255, 255, 255, 0.5)">
+          Las las we better pass jiji
+        </h4>
         <!-- Right aligned nav items -->
         <b-navbar-nav class="ml-auto">
           <b-navbar-nav>
@@ -54,6 +56,9 @@ export default {};
 
 
 <style scoped>
+.shadow {
+  box-shadow: 1px 1px 4px rgb(80 114 125 / 40%);
+}
 @media screen and (max-width: 768px) {
   .h {
     display: none;
