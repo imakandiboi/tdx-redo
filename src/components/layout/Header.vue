@@ -12,7 +12,7 @@
       <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
 
       <b-collapse id="nav-collapse" is-nav>
-        <h4 style="margin-left: 20px">Las las we better pass jiji</h4>
+        <h4 style="margin-left: 20px; color: rgba(255, 255, 255, 0.5)">Las las we better pass jiji</h4>
         <!-- Right aligned nav items -->
         <b-navbar-nav class="ml-auto">
           <b-navbar-nav>
