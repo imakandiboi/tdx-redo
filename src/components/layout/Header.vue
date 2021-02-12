@@ -1,6 +1,12 @@
 <template>
   <div>
-    <b-navbar toggleable="lg" type="dark" variant="success" class="shadow" fixed>
+    <b-navbar
+      toggleable="lg"
+      type="dark"
+      variant="success"
+      class="shadow"
+      fixed
+    >
       <b-navbar-brand href="#">
         <img
           alt="logo"
@@ -18,9 +24,9 @@
         <!-- Right aligned nav items -->
         <b-navbar-nav class="ml-auto">
           <b-navbar-nav>
-            <b-nav-item href="#">Sign in</b-nav-item>
+            <b-nav-item @click="showModal('login')">Sign in</b-nav-item>
             <span style="padding: 8px 0" class="nav-link h">|</span>
-            <b-nav-item href="#">Registration</b-nav-item>
+            <b-nav-item @click="showModal('register')">Registration</b-nav-item>
             <b-nav-text style="padding: 0"
               ><b-button variant="warning" style="width: 120px; color: white"
                 >SELL</b-button
@@ -47,11 +53,49 @@
         </b-navbar-nav>
       </b-collapse>
     </b-navbar>
+    <t-modal v-model="showRegisterLogin">
+      <div>
+        <div class="py-12 rounded-b">
+          <keep-alive>
+            <LoginModal
+              v-if="currentTab === 'LoginModal'"
+              @changeForm="showModal"
+            />
+            <RegisterModal v-else />
+          </keep-alive>
+        </div>
+      </div>
+    </t-modal>
   </div>
 </template>
 
 <script>
-export default {};
+export default {
+  name: "HomePage",
+  components: {
+    LoginModal: () => import("@/components/layout/modals/Login"),
+    RegisterModal: () => import("@/components/layout/modals/Signup"),
+  },
+  data: () => {
+    return {
+      showRegisterLogin: false,
+      currentTab: "LoginModal",
+      tabs: [
+        { name: "Login Modal", component: "LoginModal" },
+        { name: "Register Modal", component: "RegisterModal" },
+      ],
+    };
+  },
+  methods: {
+    showModal(payload) {
+      this.showRegisterLogin = true;
+      if (payload == "register") {
+        return (this.currentTab = "RegisterModal");
+      }
+      return (this.currentTab = "LoginModal");
+    },
+  },
+};
 </script>
 
 
