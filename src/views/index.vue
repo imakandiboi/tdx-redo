@@ -1,6 +1,5 @@
 <template>
   <div>
-    <Header />
     <Lander />
     <b-container>
       <b-row>
@@ -13,11 +12,9 @@
 
 <script>
 import Lander from "@/components/home/Lander.vue";
-import Header from "../components/layout/Header.vue";
 export default {
   components: {
     Lander,
-    Header,
   },
 };
 </script>

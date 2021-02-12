@@ -4,7 +4,7 @@ import router from "./router";
 import './assets/tailwind.css'
 import './plugins/VueTailwind'
 
-// Make BootstrapVue available throughout your project
+
 
 Vue.config.productionTip = false;
 

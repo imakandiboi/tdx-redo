@@ -7,8 +7,9 @@ module.exports = {
         'explorerGreen': {
           '100': '#72e86f',
           '200': '#35a84f',
-          '300': '#3db83a',
-          '400': '#3b9b1e'
+          '300': '#3fb93a',
+          '400': '#3b9b1e',
+          '500': '#48ad1e'
         }
       },
     },
@@ -16,5 +17,7 @@ module.exports = {
   variants: {
     extend: {},
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/forms')
+  ],
 }
