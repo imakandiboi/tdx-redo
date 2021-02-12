@@ -3,7 +3,9 @@
     <header>
       <Navbar />
     </header>
-    <router-view></router-view>
+    <main class="pt-12">
+      <router-view></router-view>
+    </main>
   </div>
 </template>
 
