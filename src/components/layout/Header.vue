@@ -61,7 +61,7 @@
               v-if="currentTab === 'LoginModal'"
               @changeForm="showModal"
             />
-            <RegisterModal v-else />
+            <RegisterModal v-else @changeForm="showModal" />
           </keep-alive>
         </div>
       </div>
