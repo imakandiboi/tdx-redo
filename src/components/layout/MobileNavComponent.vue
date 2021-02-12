@@ -1,0 +1,53 @@
+<template>
+  <div>
+    <div
+      class="flex sticky top-0 items-center justify-between bg-explorerGreen-300 px-4 py-3 shadow-md"
+    >
+      <div class="absolute shadow-lg inset-0 opacity-30"></div>
+      <div class="flex">
+        <img
+          src="@/assets/images/TRADEXPLORA_V4.1_mini.png"
+          alt=""
+          class="h-auto w-24"
+        />
+      </div>
+      <div class="flex">
+        <button
+          @click="showModal"
+          class="border-transparent focus:outline-none focus:ring-transparent relative mx-auto my-auto"
+        >
+          <div
+            class="h-12 w-12 bg-white opacity-30 rounded-full overflow-hidden"
+          ></div>
+          <svg
+            class="absolute inset-y-0 stroke-current text-white opacity-60 h-12 w-12"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+            />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</template>
+
+<script>
+export default {
+  methods: {
+    showModal() {
+      this.$emit("changeActive", "login");
+    },
+  },
+};
+</script>
+
+<style lang="scss" scoped>
+</style>
