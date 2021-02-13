@@ -1,21 +1,23 @@
 <template>
-  <div class="container mx-auto px-20">
-  <div class="grid grid-cols-4 gap-3">
-    <div class="col-span-3 md:col-span-3">
-      <Slider />
+  <div class="container mx-auto px-4 md:px-10">
+    <div class="grid grid-cols-6 gap-3">
+      <div class="col-span-6 lg:col-span-4">
+        <Slider />
+      </div>
+      <div class="col-span-6 lg:col-span-2">
+        <Details />
+      </div>
     </div>
-    <div class="col-span-3 md:col-span-1">
-      dd
-    </div>
-  </div>
   </div>
 </template>
 
 <script>
-import Slider from "@/components/slider"
+import Slider from "@/components/product/slider";
+import Details from "@/components/product/sellerDetails";
 export default {
   components: {
-    Slider
+    Slider,
+    Details,
   },
 };
 </script>

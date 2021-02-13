@@ -97,8 +97,8 @@ export default {
 </script>
 
 <style>
-.slide.slide--thumbniail {
-  width: 112px !important;
+.slide.slide--thumbniail img {
+  width: 100% !important;
 }
 .agile__nav-button {
   background: transparent;
@@ -113,6 +113,10 @@ export default {
   cursor: pointer;
   height: 100px;
   transition: opacity 1s;
+}
+
+.agile__slide {
+  object-fit: cover;
 }
 
 .main .agile__nav-button {
