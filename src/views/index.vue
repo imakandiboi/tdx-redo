@@ -14,7 +14,7 @@
       <!-- Categories area end-->
 
       <!-- Ads listing area -->
-      <div class="col-span-2 lg:-ml-32">
+      <div class="lg:col-span-2 lg:-ml-32">
         <AdsListing :ads="GetAds" />
       </div>
       <!-- Ads Listing area end -->

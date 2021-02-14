@@ -12,35 +12,35 @@ const state = {
         },
         {
             name: "G-Wagon 2020",
-            previewImage: 'g-wagon.webp',
+            previewImage: 'venza.jpg',
             category: 'Vehicles',
             subCategory: 'cars',
             price: "23,300,000"
         },
         {
             name: "Iphone 12 PRO MAX 256",
-            previewImage: 'iphone12.jpeg',
+            previewImage: 'venza.jpg',
             category: 'phones & tablets',
             subCategory: 'mobile phones',
             price: "850,000"
         },
         {
             name: "Iphone x",
-            previewImage: 'iphonex.webp',
+            previewImage: 'venza.jpg',
             category: 'phones & tablets',
             subCategory: 'mobile phones',
             price: "200,000"
         },
         {
             name: "Toyota Corolla 2018",
-            previewImage: 'corolla2018.jpg',
+            previewImage: 'venza.jpg',
             category: 'Vehicles',
             subCategory: 'cars',
             price: "7,300,000"
         },
         {
             name: "Mercedes Benz 2020",
-            previewImage: 'benz2020.jpg',
+            previewImage: 'venza.jpg',
             category: 'Vehicles',
             subCategory: 'cars',
             price: "20,100,000"
