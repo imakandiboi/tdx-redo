@@ -68,7 +68,7 @@
           <div class="px-3 w-full text-white">
             <a style="cursor: pointer" href="#">
               <div
-                class="relative bg-yellow-500 h-18 rounded-lg p-4 transition-all duration-700 hover:bg-yellow-600"
+                class="relative bg-yellow-400 h-18 rounded-lg p-4 transition-all duration-700 hover:bg-yellow-500"
               >
                 <span class="">
                   <svg
@@ -205,7 +205,7 @@
         </div>
       </div>
     </div>
-    <div class="grid justify-items-center shadow-lg mb-4 p-4">
+    <div class="grid justify-items-center shadow-lg mb-4 p-4 bg-white">
       <span class="font-bold text-xl"> Safety Tips </span>
       <div class="text-sm text-gray-500">
         <ul class="custom">
@@ -243,7 +243,7 @@
         </a>
       </div>
     </div>
-    <div class="shadow-lg p-1">
+    <div class="shadow-lg p-1 bg-white">
       <div
         style="position: relative"
         class="grid justify-items-center profile-details w-full my-4 px-2"
