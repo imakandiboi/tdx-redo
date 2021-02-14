@@ -96,11 +96,12 @@ export default {
 };
 </script>
 
-<style>
-.slide.slide--thumbniail img {
+<style scoped>
+.slide.slide--thumbniail >>> img {
   width: 100% !important;
 }
-.agile__nav-button {
+
+.main >>> .agile__nav-button {
   background: transparent;
   border: none;
   color: #ccc;
@@ -119,29 +120,29 @@ export default {
   object-fit: cover;
 }
 
-.main .agile__nav-button {
+.main >>> .agile__nav-button {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
   transition: 0.3s;
 }
 
-.main .agile__nav-button:hover {
+.main >>> .agile__nav-button:hover {
   background-color: rgba(0, 0, 0, 0.9);
 }
 
-.main .agile__nav-button {
+.main >>> .agile__nav-button {
   background-color: rgba(0, 0, 0, 0.4);
   width: 40px;
   height: 80px;
 }
 
-.main .agile__nav-button--prev {
+.main >>> .agile__nav-button--prev {
   left: 0px;
   border-radius: 0 8px 8px 0;
 }
 
-.main .agile__nav-button--next {
+.main >>> .agile__nav-button--next {
   right: 0;
   border-radius: 8px 0px 0px 8px;
 }
