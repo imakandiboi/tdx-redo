@@ -3,7 +3,7 @@
     <p class="ml-4 lg:ml-0 mt-8 lg:mt-2 text-lg text-gray-700 tracking-wide">
       Trending Ads.
     </p>
-    <div class="mt-6 grid lg:grid-cols-4 grid-cols-2 w-11/12 mx-auto">
+    <div class="mt-6 grid lg:grid-cols-4 grid-cols-2 w-11/12 ">
       <div
         class="bg-white shadow-md rounded-md relative my-6 w-auto mx-2"
         v-for="(ad, index) in ads"
