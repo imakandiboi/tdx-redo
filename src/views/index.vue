@@ -1,9 +1,9 @@
 <template>
   <div>
     <lander />
-    <div class="grid lg:grid-cols-2 w-auto lg:w-11/12 lg:mt-4 lg:mx-auto">
+    <div class="grid lg:grid-cols-3 w-auto lg:w-11/12 lg:mt-4 lg:mx-auto">
       <!-- Categories area -->
-      <div>
+      <div class="col-span-1">
         <div class="block lg:hidden">
           <home-categories :categories="GetCategories" />
         </div>
@@ -14,7 +14,7 @@
       <!-- Categories area end-->
 
       <!-- Ads listing area -->
-      <div class="">
+      <div class="lg:col-span-2 lg:-ml-32">
         <AdsListing :ads="GetAds" />
       </div>
       <!-- Ads Listing area end -->
