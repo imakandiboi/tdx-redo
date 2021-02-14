@@ -115,7 +115,7 @@ export default {
   transition: opacity 1s;
 }
 
-.agile__slide {
+.agile__slide img{
   object-fit: cover;
 }
 
