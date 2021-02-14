@@ -1,7 +1,7 @@
 <template>
   <div>
     <div
-      class="w-full relative flex justify-start"
+      class="w-full relative flex justify-start fixed top-0"
       @mouseleave="showSubPanel = false"
     >
       <div class="shadow-md w-1/2">
