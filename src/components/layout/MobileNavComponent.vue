@@ -1,7 +1,7 @@
 <template>
   <div>
     <div
-      class="flex sticky top-0 items-center justify-between bg-explorerGreen-300 px-4 py-3 shadow-md"
+      class="flex fixed w-full z-50 top-0 items-center justify-between bg-explorerGreen-300 px-4 py-3 shadow-md"
     >
       <div class="absolute shadow-lg inset-0 opacity-30"></div>
       <div class="flex">

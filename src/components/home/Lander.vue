@@ -1,7 +1,7 @@
 <template>
   <div>
     <div
-      class="bg-gradient-to-b from-explorerGreen-300 to-explorerGreen-500 mx-auto h-64 py-14"
+      class="bg-gradient-to-b from-explorerGreen-300 to-explorerGreen-500 mx-auto h-auto py-14 lg:py-24"
     >
       <div class="text-center mx-auto w-full flex justify-center">
         <div
