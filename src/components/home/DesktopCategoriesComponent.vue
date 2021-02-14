@@ -42,7 +42,7 @@
         </ul>
       </div>
       <div
-        class="border-l border-explorerGreen-200 shadow-md w-1/2"
+        class="border-l border-explorerGreen-200 shadow-md w-1/2 z-10 bg-white"
         v-show="showSubPanel"
       >
         <div

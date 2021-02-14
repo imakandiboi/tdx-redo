@@ -1,7 +1,7 @@
 <template>
   <div class="w-full">
     <p>Trending Ads.</p>
-    <div class="mt-6 grid lg:grid-cols-2 grid-cols-2 space-x-6">
+    <div class="mt-6 grid lg:grid-cols-3 grid-cols-2 space-x-6">
       <div
         class="bg-white shadow-md rounded-md relative my-6 w-auto"
         v-for="(ad, index) in ads"
