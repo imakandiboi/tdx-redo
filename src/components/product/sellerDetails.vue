@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="shadow mb-4">
+    <div class="shadow-lg mb-4">
       <div
         style="
           padding: 27px 18px;
@@ -37,7 +37,7 @@
           class="grid justify-items-center relative profile-details w-full text-center"
         >
           <div
-            class="absolute w-6 h-6 shadow border-4 border-white bg-gray-100 rounded-full border-white b-seller-online-status"
+            class="absolute w-6 h-6 shadow-lg border-4 border-white bg-gray-100 rounded-full border-white b-seller-online-status"
           ></div>
           <a
             style="
@@ -47,7 +47,7 @@
               background-image: url('https://assets.jiji.ng/static/img/no-image/jobseekers.png');
             "
             href="#"
-            class="w-20 h-20 shadow rounded-full shadow-md"
+            class="w-20 h-20 shadow-lg rounded-full"
           >
             <!-- <img
               src="https://assets.jiji.ng/static/img/no-image/jobseekers.png"
@@ -70,7 +70,7 @@
               <div
                 class="relative bg-yellow-500 h-18 rounded-lg p-4 transition-all duration-700 hover:bg-yellow-600"
               >
-                <span class="text-xl">
+                <span class="">
                   <svg
                     stroke-width="0"
                     class="positive"
@@ -101,7 +101,7 @@
                     </use></svg
                   >&nbsp; &nbsp; 1 Feedback</span
                 >
-                <span style="float: right" class="text-lg"
+                <span style="float: right" class=""
                   ><u>Watch All</u>&nbsp; &nbsp;
                   <svg
                     stroke-width="0"
@@ -205,10 +205,10 @@
         </div>
       </div>
     </div>
-    <div class="grid justify-items-center shadow mb-4 p-4">
+    <div class="grid justify-items-center shadow-lg mb-4 p-4">
       <span class="font-bold text-xl"> Safety Tips </span>
       <div class="text-sm text-gray-500">
-        <ul>
+        <ul class="custom">
           <li>Do not pay in advance even for the delivery</li>
           <li>Try to meet at a safe, public location</li>
           <li>Check the item BEFORE you buy it</li>
@@ -243,7 +243,7 @@
         </a>
       </div>
     </div>
-    <div class="shadow p-1">
+    <div class="shadow-lg p-1">
       <div
         style="position: relative"
         class="grid justify-items-center profile-details w-full my-4 px-2"
@@ -262,7 +262,7 @@
   </div>
 </template>
 
-<style>
+<style scoped>
 .market:hover {
   background-color: rgba(61, 184, 58, 0.1);
 }
@@ -272,7 +272,7 @@
   bottom: 0;
 }
 
-li {
+ul.custom li {
   display: list-item;
   list-style-type: disc;
   list-style-position: inside;

@@ -3,7 +3,7 @@
     <header>
       <Navbar />
     </header>
-    <main class="pt-12">
+    <main class="pt-12 bg-gray-100">
       <router-view></router-view>
     </main>
   </div>
