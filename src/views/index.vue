@@ -15,7 +15,7 @@
 
       <!-- Ads listing area -->
       <div class="">
-        <AdsListing />
+        <AdsListing :ads="GetAds" />
       </div>
       <!-- Ads Listing area end -->
     </div>
@@ -37,6 +37,7 @@ export default {
   },
   computed: {
     ...mapGetters("category", ["GetCategories"]),
+    ...mapGetters("ads", ["GetAds"]),
   },
 };
 </script>
