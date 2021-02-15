@@ -1,34 +1,28 @@
 <template>
-  <div>
-    <agile class="main" ref="main" :options="options1" :as-nav-for="asNavFor1">
-      <div
-        class="slide"
-        v-for="(slide, index) in slides"
-        :key="index"
-        :class="`slide--${index}`"
+  <div class="grid grid-cols-4 w-11/12">
+    <div class="col-span-3 m-2">
+      <agile class="main">
+        <div
+          class="slide"
+          v-for="(slide, index) in slides"
+          :key="index"
+          :class="`slide--${index}`"
+        >
+          <img :src="slide" />
+        </div>
+      </agile>
+    </div>
+    <div class="col-span-1 m-2 p-2 bg-yellow-500 text-center text-white">
+      <span class="block font-bold text-xl leading-none"
+        >Got something to sell?</span
       >
-        <img :src="slide" />
-      </div>
-    </agile>
-    <agile
-      class="thumbnails"
-      ref="thumbnails"
-      :options="options2"
-      :as-nav-for="asNavFor2"
-    >
-      <div
-        style="margin: 2px;"
-        class="slide slide--thumbniail"
-        v-for="(slide, index) in slides"
-        :key="index"
-        :class="`slide--${index}`"
-        @click="$refs.thumbnails.goTo(index)"
+      <button
+        class="mx-auto b-post-advert-banner__button w-1/2 bg-white shadow-md focus:outline-none rounded-full relative my-2"
       >
-        <img style="object-fit: cover; height: 100px" :src="slide" />
-      </div>
-      <!-- <template slot="prevButton">&lt;</template>
-      <template slot="nextButton">&gt;</template> -->
-    </agile>
+        <div class="b-post-advert-banner__button_inner"></div>
+      </button>
+      <span class="block font-bold text-lg">Post and advert for free!</span>
+    </div>
   </div>
 </template>
 
@@ -40,43 +34,8 @@ export default {
     agile: VueAgile,
   },
 
-  props: {
-    // slides: Array,
-  },
-
   data() {
     return {
-      asNavFor1: [],
-      asNavFor2: [],
-      options1: {
-        dots: false,
-        fade: true,
-        navButtons: true,
-      },
-
-      options2: {
-        autoplay: true,
-        centerMode: true,
-        dots: false,
-        navButtons: false,
-        slidesToShow: 3,
-        responsive: [
-          {
-            breakpoint: 600,
-            settings: {
-              slidesToShow: 5,
-            },
-          },
-
-          {
-            breakpoint: 1000,
-            settings: {
-              navButtons: false,
-            },
-          },
-        ],
-      },
-
       slides: [
         "https://images.unsplash.com/photo-1453831362806-3d5577f014a4?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&w=1600&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ",
         "https://images.unsplash.com/photo-1496412705862-e0088f16f791?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&w=1600&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ",
@@ -88,20 +47,67 @@ export default {
       ],
     };
   },
-
-  mounted() {
-    this.asNavFor1.push(this.$refs.thumbnails);
-    this.asNavFor2.push(this.$refs.main);
-  },
 };
 </script>
 
 <style scoped>
-.slide.slide--thumbniail >>> img {
-  width: 100% !important;
+.b-post-advert-banner__button {
+  cursor: pointer;
+  transition: box-shadow 0.2s;
+  will-change: box-shadow;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.main >>> .agile__nav-button {
+.b-post-advert-banner__button:before {
+  content: "";
+  display: table;
+  padding-top: 100%;
+}
+
+.b-post-advert-banner__button_inner {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.b-post-advert-banner__button_inner:before {
+  width: 7%;
+  height: 60%;
+}
+.b-post-advert-banner__button_inner:after {
+  width: 60%;
+  height: 7%;
+}
+
+.b-post-advert-banner__button_inner:after,
+.b-post-advert-banner__button_inner:before {
+  content: "";
+  background-color: #ffa010;
+  position: absolute;
+  margin: auto;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+}
+
+.agile__slide img {
+  object-fit: cover;
+}
+
+.agile {
+  width: 100%;
+}
+.agile__actions {
+  margin-top: 20px;
+}
+.agile__nav-button {
   background: transparent;
   border: none;
   color: #ccc;
@@ -110,14 +116,16 @@ export default {
   transition-duration: 0.3s;
 }
 
-.slide--thumbniail {
-  cursor: pointer;
-  height: 100px;
-  transition: opacity 1s;
+.agile__nav-button:hover {
+  color: white;
 }
 
-.agile__slide img{
-  object-fit: cover;
+.slide {
+  align-items: center;
+  color: #fff;
+  display: flex;
+  height: 210px;
+  justify-content: center;
 }
 
 .main >>> .agile__nav-button {
@@ -125,14 +133,17 @@ export default {
   top: 50%;
   transform: translateY(-50%);
   transition: 0.3s;
+  color: #fff;
 }
 
 .main >>> .agile__nav-button:hover {
   background-color: rgba(0, 0, 0, 0.9);
+  color: #fff;
 }
 
 .main >>> .agile__nav-button {
   background-color: rgba(0, 0, 0, 0.4);
+
   width: 40px;
   height: 80px;
 }
@@ -147,7 +158,7 @@ export default {
   border-radius: 8px 0px 0px 8px;
 }
 
-.slide--thumbniail:hover {
-  opacity: 0.75;
-}
+/* .main >>> .agile__list {
+  height: 100%;
+} */
 </style>
