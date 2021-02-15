@@ -15,6 +15,9 @@
 
       <!-- Ads listing area -->
       <div class="lg:col-span-2 lg:-ml-32">
+        <div class="hidden lg:block">
+          <info />
+        </div>
         <AdsListing :ads="GetAds" />
       </div>
       <!-- Ads Listing area end -->
@@ -26,6 +29,7 @@
 import Lander from "@/components/home/Lander";
 import AdsListing from "@/components/home/AdsListing";
 import { mapGetters } from "vuex";
+import Info from "../components/home/info.vue";
 
 export default {
   components: {
@@ -34,6 +38,7 @@ export default {
     DesktopCategories: () =>
       import("@/components/home/DesktopCategoriesComponent"),
     AdsListing,
+    Info,
   },
   computed: {
     ...mapGetters("category", ["GetCategories"]),

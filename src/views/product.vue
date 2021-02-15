@@ -31,13 +31,19 @@
       </ol>
     </div>
     <div class="grid grid-cols-8 gap-3">
-      <div class="col-span-8 lg:col-span-5 xl:col-span-6 border-t-4 border-explorerGreen-300 shadow-lg bg-white">
+      <div
+        class="col-span-8 lg:col-span-5 xl:col-span-6 border-t-4 border-explorerGreen-300 shadow-lg bg-white"
+      >
         <Slider />
         <productDetails />
       </div>
       <div class="col-span-8 lg:col-span-3 xl:col-span-2">
         <sellerDetails />
       </div>
+    </div>
+    <div class="py-8">
+      <div class="text-xl text-gray-700 font-semibold py-3">Similar Ads</div>
+      <similarAds />
     </div>
   </div>
 </template>
@@ -46,11 +52,13 @@
 import Slider from "@/components/product/slider";
 import sellerDetails from "@/components/product/sellerDetails";
 import productDetails from "@/components/product/productDetails";
+import SimilarAds from '../components/product/similarAds.vue';
 export default {
   components: {
     Slider,
     sellerDetails,
     productDetails,
+    SimilarAds
   },
 };
 </script>
