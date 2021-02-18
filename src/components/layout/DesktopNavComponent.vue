@@ -5,11 +5,13 @@
     >
       <div class="w-10/12 flex items-center justify-between mx-auto">
         <div class="flex">
-          <img
-            src="@/assets/images/TRADEXPLORA_V4.1_mini.png"
-            alt=""
-            class="h-auto w-24"
-          />
+          <router-link :to="{ name: 'Home' }" class="flex">
+            <img
+              src="@/assets/images/TRADEXPLORA_V4.1_mini.png"
+              alt=""
+              class="h-auto w-24"
+            />
+          </router-link>
         </div>
         <div>
           <p

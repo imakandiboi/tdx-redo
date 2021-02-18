@@ -1,6 +1,6 @@
 <template>
   <footer
-    class="footer bg-explorerGreen-300 relative pt-1 border-b-2 border-blue-700"
+    class="footer hidden lg:block relative bg-explorerGreen-300 w-full pt-1 border-b-2 border-blue-700"
   >
     <div class="container mx-auto px-6">
       <div class="sm:flex sm:mt-8">
