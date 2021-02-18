@@ -5,7 +5,7 @@
         <DesktopNav @changeActive="showModal" />
       </div>
       <div class="block lg:hidden">
-        <MobileNav @changeActive="showModal" />
+        <MobileNav @changeActive="showModal" v-if="showNav" />
       </div>
     </div>
     <t-modal v-model="showRegisterLogin">
@@ -35,6 +35,7 @@ export default {
   },
   data() {
     return {
+      showNav: true,
       showRegisterLogin: false,
       currentTab: "LoginModal",
       tabs: [
@@ -50,6 +51,17 @@ export default {
         return (this.currentTab = "RegisterModal");
       }
       return (this.currentTab = "LoginModal");
+    },
+  },
+  watch: {
+    immediate: true,
+    $route: function () {
+      // Check if given route is true, if it is then hide Nav.
+      if (this.$route.name === "Settings" || this.$route.name === "Profile") {
+        this.showNav = false;
+      } else {
+        this.showNav = true;
+      }
     },
   },
 };
