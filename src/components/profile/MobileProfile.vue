@@ -3,14 +3,36 @@
     <div
       class="bg-gradient-to-r py-3 from-explorerGreen-200 to-explorerGreen-500"
     >
-      <img
-        src="/icons/programmer.svg"
-        alt=""
-        class="rounded-full w-20 mx-auto h-20"
-      />
-      <p class="text-center py-4 text-lg font-bold tracking-wide text-white">
-        Owolabi Joshua (Dropcode)
-      </p>
+      <div class="px-6">
+        <router-link :to="{ name: 'Home' }">
+          <button class="focus:outline-none">
+            <svg
+              class="h-8 w-8 stoke-current text-gray-100"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M15 19l-7-7 7-7"
+              />
+            </svg>
+          </button>
+        </router-link>
+      </div>
+      <div>
+        <img
+          src="/icons/programmer.svg"
+          alt=""
+          class="rounded-full w-20 mx-auto h-20"
+        />
+        <p class="text-center py-4 text-lg font-bold tracking-wide text-white">
+          Owolabi Joshua (Dropcode)
+        </p>
+      </div>
     </div>
     <div>
       <ul>
