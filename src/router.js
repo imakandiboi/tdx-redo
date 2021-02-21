@@ -12,24 +12,26 @@ const routes = [
   {
     path: "/product",
     name: "",
-    component: () =>
-      import("@/views/product.vue"),
+    component: () => import("@/views/product.vue"),
   },
   {
     path: "/profile",
     name: "Profile",
-    component: () =>
-      import("@/views/profile.vue"),
+    component: () => import("@/views/profile.vue"),
+    redirect: '/profile/default',
     children: [
-
-    ]
+      {
+        path: "/profile/default",
+        name: "ProfileDefault",
+        component: () => import("@/components/profile/ProfileComponent.vue"),
+      },
+      {
+        path: "/profile/settings",
+        name: "Settings",
+        component: () => import("@/views/settings.vue"),
+      },
+    ],
   },
-  {
-    path: '/profile/settings',
-    name: 'Settings',
-    component: () =>
-      import("@/views/settings.vue"),
-  }
 ];
 
 const router = new VueRouter({

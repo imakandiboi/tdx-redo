@@ -37,7 +37,7 @@
           >
         </div>
       </div>
-      <div class="text-center mx-auto w-full flex justify-center mt-8 w-11/12">
+      <div class="text-center mx-auto flex justify-center mt-8 w-11/12">
         <div class="w-11/12 md:w-6/12 relative text-gray-600 flex items-center">
           <input
             type="search"

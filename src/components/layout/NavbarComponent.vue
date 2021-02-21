@@ -57,7 +57,7 @@ export default {
     immediate: true,
     $route: function () {
       // Check if given route is true, if it is then hide Nav.
-      if (this.$route.name === "Settings" || this.$route.name === "Profile") {
+      if (this.$route.name === "Settings" || this.$route.name === "ProfileDefault") {
         this.showNav = false;
       } else {
         this.showNav = true;
