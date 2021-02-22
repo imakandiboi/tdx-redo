@@ -1,19 +1,21 @@
 <template>
   <div class="mt-12">
-    <div class="w-10/12 mx-auto pb-12 flex items-start justify-between">
-      <div class="w-1/3">
+    <div class="w-11/12 mx-auto pb-12 grid grid-flow-col space-x-4">
+      <div class="">
         <ProfileSidebar
           :tabs="tabs"
           :selectedTab="currentTab"
           @switchTab="ChangeTab"
         />
       </div>
-      <div class="w-2/3">
-        <keep-alive>
-          <AdvertTabComponent :is="currentTab" />
-          <FeedbackTabComponent :is="currentTab" />
-          <FollowersTabComponent :is="currentTab" />
-        </keep-alive>
+      <div class="overflow-scroll">
+        <div class="bg-white shadow-md rounded-md overflow-scroll">
+          <keep-alive>
+            <AdvertTabComponent :is="currentTab" />
+            <FeedbackTabComponent :is="currentTab" />
+            <FollowersTabComponent :is="currentTab" />
+          </keep-alive>
+        </div>
       </div>
     </div>
   </div>
