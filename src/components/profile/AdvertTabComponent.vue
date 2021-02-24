@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="overflow-scroll">
+    <div class="">
       <div class="px-4 py-6 flex items-center justify-between">
         <p class="text-gray-700 text-xl font-bold tracking-wide hidden-sm">
           My Adverts

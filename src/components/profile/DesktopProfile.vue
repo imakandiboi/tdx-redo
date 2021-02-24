@@ -1,15 +1,15 @@
 <template>
   <div class="mt-12">
-    <div class="w-11/12 mx-auto pb-12 grid grid-flow-col space-x-4">
-      <div class="">
+    <div class="w-11/12 mx-auto px-12 pb-12 grid grid-flow-col grid-cols-6 gap-8 space-x-4">
+      <div class="col-span-2">
         <ProfileSidebar
           :tabs="tabs"
           :selectedTab="currentTab"
           @switchTab="ChangeTab"
         />
       </div>
-      <div class="overflow-scroll">
-        <div class="bg-white shadow-md rounded-md overflow-scroll">
+      <div class="col-span-4">
+        <div class="bg-white shadow-md rounded-md">
           <keep-alive>
             <AdvertTabComponent :is="currentTab" />
             <FeedbackTabComponent :is="currentTab" />

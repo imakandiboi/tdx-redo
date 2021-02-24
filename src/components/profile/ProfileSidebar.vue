@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="w-96 shadow-lg py-4 rounded-md bg-white">
+    <div class="w-full shadow-lg py-4 rounded-md bg-white">
       <div class="mt-4">
         <img
           src="/icons/programmer.svg"
