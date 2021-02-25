@@ -1,22 +1,20 @@
 <template>
   <div>
-    <div>
-      <img src="/icons/empty-data.jpg" class="h-64 w-64 mx-auto" alt="" />
-      <div class="mt-4">
-        <p class="font-light tracking-wide text-xl text-gray-500 text-center">
-          There are no adverts yet
-        </p>
-        <p class="font-light tracking-wide text-xl text-gray-500 text-center">
-          Create a new one now !
-        </p>
-      </div>
-    </div>
+    <EmptyData :messageTitle="emptyTitle" :messageBody="emptyMessage" />
   </div>
 </template>
 
 <script>
-export default {};
+import EmptyData from "@/components/layout/handlers/EmptyTab";
+export default {
+  components: { EmptyData },
+  data() {
+    return {
+      emptyTitle: "No Adverts Available",
+      emptyMessage: "Create new adverts!!!",
+    };
+  },
+};
 </script>
 
-<style lang="scss" scoped>
-</style>
+<style lang="scss" scoped></style>

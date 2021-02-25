@@ -1,13 +1,13 @@
 <template>
   <div>
     <div class="">
-      <div class="px-4 py-6 flex items-center justify-between">
-        <p class="text-gray-700 text-xl font-bold tracking-wide hidden-sm">
+      <div class="px-4 py-6 flex items-center justify-between overflow-auto">
+        <p class="text-gray-700 text-sm font-bold tracking-wide hidden-sm">
           My Adverts
         </p>
-        <div class="flex items-center space-x-4">
+        <div class="flex items-center space-x-2">
           <button
-            class="flex items-center px-4 py-2 text-xs rounded-lg focus:outline-none text-white"
+            class="flex items-center px-3 py-2 text-xs rounded-lg focus:outline-none text-white"
             :class="
               currentTab === 'ActiveAdvertTab'
                 ? 'bg-explorerGreen-300 focus:text-white font-semibold'
@@ -29,10 +29,10 @@
                 d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
               />
             </svg>
-            Active <span>(0)</span>
+            Active <span class="text-xs">(0)</span>
           </button>
           <button
-            class="px-4 py-2 flex items-center focus:outline-none text-yellow-400 text-sm rounded-lg"
+            class="px-3 py-2 flex items-center focus:outline-none text-yellow-400 text-xs rounded-lg"
             :class="
               currentTab === 'ReviewAdvertTab'
                 ? 'bg-yellow-100 focus:text-yellow-600'
@@ -43,7 +43,7 @@
             Reviewing <span>(0)</span>
           </button>
           <button
-            class="px-4 py-2 text-sm flex items-center rounded-lg text-red-400"
+            class="px-3 py-2 text-xs flex items-center rounded-lg text-red-400"
             :class="
               currentTab === 'DeclinedAdvertTab'
                 ? 'bg-red-600 opacity-50 focus:outline-none focus:text-white'
@@ -54,7 +54,7 @@
             Declined <span>(0)</span>
           </button>
           <button
-            class="px-4 py-2 text-sm flex items-center rounded-lg text-gray-800"
+            class="px-3 py-2 text-xs flex items-center rounded-lg text-gray-800"
             :class="
               currentTab === 'DraftAdvertTab'
                 ? 'bg-gray-600 opacity-50 focus:outline-none focus:text-white'
@@ -65,7 +65,7 @@
             Draft <span>(0)</span>
           </button>
           <button
-            class="px-4 py-2 text-sm flex items-center rounded-lg text-gray-500"
+            class="px-3 py-2 text-xs flex items-center rounded-lg text-gray-500"
             :class="
               currentTab === 'ClosedAdvertTab'
                 ? 'bg-gray-600 opacity-50 focus:outline-none focus:text-white'
@@ -76,7 +76,7 @@
             Closed <span>(0)</span>
           </button>
           <button
-            class="px-4 py-2 text-sm flex items-center rounded-lg text-gray-500"
+            class="px-3 py-2 text-xs flex items-center rounded-lg text-gray-500"
             :class="
               currentTab === 'AllAdvertTab'
                 ? 'bg-gray-600 opacity-50 focus:outline-none focus:text-white'
