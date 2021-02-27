@@ -1,12 +1,20 @@
 <template>
-  <div>
-    <p>Review Tab</p>
-  </div>
+	<div>
+		<EmptyData :messageTitle="emptyTitle" :messageBody="emptyMessage" />
+	</div>
 </template>
 
 <script>
-export default {};
+import EmptyData from "@/components/layout/handlers/EmptyTab";
+export default {
+	components: { EmptyData },
+	data() {
+		return {
+			emptyTitle: "No Adverts Available",
+			emptyMessage: "Create new adverts!!!",
+		};
+	},
+};
 </script>
 
-<style lang="scss" scoped>
-</style>
+<style lang="scss" scoped></style>
