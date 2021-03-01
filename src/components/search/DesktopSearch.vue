@@ -5,31 +5,158 @@
         <div class="col-span-2">
           <div class="shadow-lg mb-4">
             <div
-              style="
-                color: #fff;
-              "
-              class="grid text-lg bg-gradient-to-b from-explorerGreen-300 to-explorerGreen-300 p-3 rounded-t-md"
+              style="color: #fff"
+              class="grid text-lg bg-gradient-to-b from-explorerGreen-300 to-explorerGreen-300 p-2 font-bold rounded-t-md"
             >
-              Categories
+              Search in categories
             </div>
-            <div
-              style="background-color: rgba(61, 184, 58, 0.2); padding: 12px"
-              class="grid justify-items-center"
-            >
-              <div
-                style="width: 100%; cursor: pointer"
-                class="market grid justify-items-center border rounded-md border-explorerGreen-300 h-10"
-              >
-                <button
-                  style="outline: none"
-                  type="button"
-                  class="text-sm px-1 text-explorerGreen-300"
+            <div style="padding: 12px" class="grid bg-white">
+              <div class="text-gray-600">
+                Shoes | <span class="text-gray-400">1000</span>
+              </div>
+              <div class="text-gray-600">
+                Shoes | <span class="text-gray-400">1000</span>
+              </div>
+              <div class="text-gray-600">
+                Shoes | <span class="text-gray-400">1000</span>
+              </div>
+              <div class="text-gray-600">
+                Shoes | <span class="text-gray-400">1000</span>
+              </div>
+              <div class="text-gray-600">
+                Shoes | <span class="text-gray-400">1000</span>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="shadow-lg mb-4 rounded-md bg-white flex justify-between items-center"
+          >
+            <div class="grid text-md p-2 text-gray-600">
+              Location
+              <div class="text-gray-400">All Nigeria</div>
+            </div>
+            <div style="padding: 12px" class="grid">
+              <div class="text-gray-400">
+                <svg
+                  stroke-width="0"
+                  class="arrow-right"
+                  style="
+                    width: 6px;
+                    height: 10px;
+                    max-width: 6px;
+                    max-height: 10px;
+                    fill: rgb(153, 178, 191);
+                    stroke: inherit;
+                  "
                 >
-                  <span
-                    ><!---->
-                    <span> Market price: ₦ 1.85 M ~ 1.95 M </span></span
-                  >
-                </button>
+                  <use xlink:href="#arrow-right">
+                    <svg id="arrow-right" viewBox="0 0 176.2 309.1">
+                      <path
+                        fill="inherit"
+                        d="M174,149.3L26.9,2.2c-2.9-2.9-7.7-2.9-10.6,0L2.2,16.3C0.8,17.7,0,19.7,0,21.6s0.8,3.9,2.2,5.3l127.6,127.6L2.2,282.2
+	c-1.4,1.4-2.2,3.3-2.2,5.3s0.8,3.9,2.2,5.3l14.1,14.1c1.5,1.5,3.4,2.2,5.3,2.2s3.8-0.7,5.3-2.2L174,159.9
+	C176.9,156.9,176.9,152.2,174,149.3z"
+                      ></path>
+                    </svg>
+                  </use>
+                </svg>
+              </div>
+            </div>
+          </div>
+
+          <div class="shadow-lg mb-4 bg-white">
+            <div class="grid text-md p-2 text-gray-600">Price</div>
+            <div style="padding: 12px" class="grid bg-white">
+              <div class="flex justify-between text-gray-600 items-center">
+                <div class="border-gray-400 border w-2/5 p-t-2 p-1 rounded-md">
+                  <label for="min" class="text-xs"> min </label>
+                  <input
+                    name="min"
+                    type="text"
+                    class="border-0 bg-transparent focus:border-0 p-0 m-0 w-full focus:ring-0"
+                  />
+                </div>
+                <div class="hidden md:block">-</div>
+                <div class="border-gray-400 border w-2/5 p-t-2 p-1 rounded-md">
+                  <label for="max" class="text-xs"> max </label>
+                  <input
+                    name="max"
+                    type="text"
+                    class="border-0 bg-transparent focus:border-0 p-0 m-0 w-full focus:ring-0"
+                  />
+                </div>
+              </div>
+
+              <div class="mt-2 grid bg-white">
+                <div class="text-gray-600">
+                  <input type="radio" name="price-range" />
+                  <label class="ml-2" for="">
+                    Under 3k <span class="text-gray-400">• 1000</span>
+                  </label>
+                </div>
+                <div class="text-gray-600">
+                  <input type="radio" name="price-range" />
+                  <label class="ml-2" for="">
+                    Under 3k <span class="text-gray-400">• 1000</span>
+                  </label>
+                </div>
+                <div class="text-gray-600">
+                  <input type="radio" name="price-range" />
+                  <label class="ml-2" for="">
+                    Under 3k <span class="text-gray-400">• 1000</span>
+                  </label>
+                </div>
+                <div class="text-gray-600">
+                  <input type="radio" name="price-range" />
+                  <label class="ml-2" for="">
+                    Under 3k <span class="text-gray-400">• 1000</span>
+                  </label>
+                </div>
+                <div class="text-gray-600">
+                  <input type="radio" name="price-range" />
+                  <label class="ml-2" for="">
+                    Under 3k <span class="text-gray-400">• 1000</span>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="shadow-lg mb-4 bg-white">
+            <div class="grid text-md p-2 text-gray-600">Condition</div>
+            <div style="padding: 12px" class="grid bg-white">
+              <div class="grid bg-white">
+                <div class="text-gray-600">
+                  <input type="radio" name="price-range" id="price-1" />
+                  <label class="ml-2" for="price-1">
+                    Under 3k <span class="text-gray-400">• 1000</span>
+                  </label>
+                </div>
+                <div class="text-gray-600">
+                  <input type="radio" name="price-range" />
+                  <label class="ml-2" for="">
+                    Under 3k <span class="text-gray-400">• 1000</span>
+                  </label>
+                </div>
+                <div class="text-gray-600">
+                  <input type="radio" name="price-range" />
+                  <label class="ml-2" for="">
+                    Under 3k <span class="text-gray-400">• 1000</span>
+                  </label>
+                </div>
+                <div class="text-gray-600">
+                  <input type="radio" name="price-range" />
+                  <label class="ml-2" for="">
+                    Under 3k <span class="text-gray-400">• 1000</span>
+                  </label>
+                </div>
+                <div class="text-gray-600">
+                  <input type="radio" name="price-range" />
+                  <label class="ml-2" for="">
+                    Under 3k <span class="text-gray-400">• 1000</span>
+                  </label>
+                </div>
               </div>
             </div>
           </div>
@@ -128,3 +255,7 @@ export default {
   components: { ProductListing },
 };
 </script>
+
+<style scoped>
+
+</style>
