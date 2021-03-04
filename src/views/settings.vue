@@ -1,11 +1,13 @@
 <template>
-  <div>
-    <div>
-      <div class="hidden lg:block">
+  <div class="container mx-auto lg:py-10 lg:px-20">
+    <div class="grid grid-cols-6 gap-4">
+      <div class="col-span-2 hidden lg:block">
         <DesktopSettings />
       </div>
-      <div class="block lg:hidden">
-        <MobileSettings />
+      <div class="col-span-6 mt-20 lg:col-span-4 lg:mt-0">
+        <router-view></router-view>
+
+        <!-- <MobileSettings /> -->
       </div>
     </div>
   </div>
@@ -14,7 +16,7 @@
 <script>
 export default {
   components: {
-    MobileSettings: () => import("@/components/profile/MobileSettings"),
+    // MobileSettings: () => import("@/components/profile/MobileSettings"),
     DesktopSettings: () => import("@/components/profile/DesktopSettings"),
   },
 };
