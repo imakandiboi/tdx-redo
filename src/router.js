@@ -18,7 +18,7 @@ const routes = [
     path: "/profile",
     name: "Profile",
     component: () => import("@/views/profile.vue"),
-    redirect: '/profile/default',
+    redirect: "/profile/default",
     children: [
       {
         path: "/profile/default",
@@ -27,8 +27,33 @@ const routes = [
       },
       {
         path: "/profile/settings",
-        name: "Settings",
+        // name: "Settings",
         component: () => import("@/views/settings.vue"),
+        children: [
+          {
+            path: "/",
+            name: "Settings",
+            component: () => import("@/components/profile/MobileSettings"),
+          },
+          {
+            path: "contact-details",
+            name: "contact-details",
+            component: () =>
+              import("@/components/profile/settings/ContactDetails"),
+          },
+          {
+            path: "company-details",
+            name: "company-details",
+            component: () =>
+              import("@/components/profile/settings/CompanyDetails"),
+          },
+
+          {
+            path: "phone",
+            name: "phone",
+            component: () => import("@/components/profile/settings/phone"),
+          },
+        ],
       },
     ],
   },

@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="block lg:hidden">
     <div class="pt-0">
       <div
         class="flex items-center shadow-md justify-start space-x-4 px-2 py-3 bg-white"
@@ -28,7 +28,7 @@
         <ul>
           <li class="w-full border-b border-gray-200">
             <router-link
-              :to="{ name: 'Home' }"
+              :to="{ name: 'contact-details' }"
               class="w-full flex items-center justify-between px-3 py-3"
             >
               <span class="text-gray-600 tracking-tight text-sm"
@@ -52,7 +52,7 @@
           </li>
           <li class="w-full border-b border-gray-200">
             <router-link
-              :to="{ name: 'Home' }"
+              :to="{ name: 'company-details' }"
               class="w-full flex items-center justify-between px-3 py-3"
             >
               <span class="text-gray-600 tracking-tight text-sm"
@@ -76,7 +76,7 @@
           </li>
           <li class="w-full border-b border-gray-200">
             <router-link
-              :to="{ name: 'Home' }"
+              :to="{ name: 'phone' }"
               class="w-full flex items-center justify-between px-3 py-3"
             >
               <span class="text-gray-600 tracking-tight text-sm"

@@ -21,6 +21,17 @@
           >
             <img :src="'/icons/' + tab.icon" alt="" class="h-6 w-6" />
             <span
+              v-if="tab.type == 'link'"
+              class="text-lg tracking-tight text-gray-700"
+              :class="
+                selectedTab === tab.component ? 'text-explorerGreen-300' : ''
+              "
+              ><router-link :to="{ name: 'Settings' }">{{
+                tab.name
+              }}</router-link></span
+            >
+            <span
+              v-else
               class="text-lg tracking-tight text-gray-700"
               :class="
                 selectedTab === tab.component ? 'text-explorerGreen-300' : ''
