@@ -53,6 +53,30 @@ const routes = [
             name: "phone",
             component: () => import("@/components/profile/settings/phone"),
           },
+
+          {
+            path: "chat",
+            name: "chat-settings",
+            component: () => import("@/components/profile/settings/ChatSettings"),
+          },
+
+          {
+            path: "feedback",
+            name: "feedback-settings",
+            component: () => import("@/components/profile/settings/FeedbackSettings"),
+          },
+
+          {
+            path: "social",
+            name: "social-networks",
+            component: () => import("@/components/profile/settings/SocialNetworks"),
+          },
+
+          {
+            path: "notification",
+            name: "notification-settings",
+            component: () => import("@/components/profile/settings/NotificationSettings"),
+          },
         ],
       },
     ],

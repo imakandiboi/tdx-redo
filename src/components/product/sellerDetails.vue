@@ -68,7 +68,7 @@
           <div class="px-3 w-full text-white">
             <a style="cursor: pointer" href="#">
               <div
-                class="relative bg-yellow-400 h-18 rounded-lg p-4 transition-all duration-700 hover:bg-yellow-500"
+                class="flex justify-between bg-yellow-400 h-18 rounded-lg p-4 transition-all duration-700 hover:bg-yellow-500"
               >
                 <span class="">
                   <svg
@@ -101,7 +101,7 @@
                     </use></svg
                   >&nbsp; &nbsp; 1 Feedback</span
                 >
-                <span style="float: right" class=""
+                <span class=""
                   ><u>Watch All</u>&nbsp; &nbsp;
                   <svg
                     stroke-width="0"
