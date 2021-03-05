@@ -31,30 +31,31 @@
       <p
         class="block lg:hidden text-explorerGreen-300 text-xl font-bold tracking-wide hidden-sm"
       >
-        <svg
-          stroke-width="0"
-          @click="$router.go(-1)"
-          class="mr-2 inline-block"
-          style="
-            width: 24px;
-            height: 24px;
-            max-width: 24px;
-            max-height: 24px;
-            fill: rgb(61, 184, 58);
-            stroke: inherit;
-          "
-        >
-          <use xlink:href="#arrow-left">
-            <svg id="arrow-left" viewBox="0 0 583.7 1024">
-              <path
-                fill="inherit"
-                d="M7.3,494.4L494.4,7.3c9.7-9.7,25.4-9.7,35.1,0l46.8,46.8c4.7,4.7,7.3,11,7.3,17.6s-2.6,12.9-7.3,17.6L153.7,512l422.7,422.7
+        <router-link :to="{ name: 'Settings' }">
+          <svg
+            stroke-width="0"
+            class="mr-2 inline-block"
+            style="
+              width: 24px;
+              height: 24px;
+              max-width: 24px;
+              max-height: 24px;
+              fill: rgb(61, 184, 58);
+              stroke: inherit;
+            "
+          >
+            <use xlink:href="#arrow-left">
+              <svg id="arrow-left" viewBox="0 0 583.7 1024">
+                <path
+                  fill="inherit"
+                  d="M7.3,494.4L494.4,7.3c9.7-9.7,25.4-9.7,35.1,0l46.8,46.8c4.7,4.7,7.3,11,7.3,17.6s-2.6,12.9-7.3,17.6L153.7,512l422.7,422.7
 	c4.7,4.7,7.3,11,7.3,17.6s-2.6,12.9-7.3,17.6l-46.8,46.8c-4.8,4.8-11.2,7.3-17.6,7.3c-6.4,0-12.7-2.4-17.6-7.3L7.3,529.6
 	C-2.4,519.9-2.4,504.1,7.3,494.4L7.3,494.4z"
-              ></path>
-            </svg>
-          </use>
-        </svg>
+                ></path>
+              </svg>
+            </use>
+          </svg>
+        </router-link>
         Notifications Settings
       </p>
     </div>

@@ -26,7 +26,7 @@
             </svg>
           </use>
         </svg>
-        Feedback settings
+        Manage my account
       </p>
       <p
         class="block lg:hidden text-explorerGreen-300 text-xl font-bold tracking-wide hidden-sm"
@@ -56,36 +56,32 @@
             </use>
           </svg>
         </router-link>
-        Feedback settings
+        Manage my account
       </p>
     </div>
     <div class="flex flex-col shadow-md px-7 py-10">
-      <div class="w-full lg:w-3/5 relative my-3 switch switch--2">
-        <label class="switch__label h-full flex items-center">
-          <input type="checkbox" class="switch__input" />
-          <span class="switch__design mr-6"></span>
-          <span class="text-gray-700 text-lg">Receive and show feedback</span>
-        </label>
-      </div>
-
       <div class="w-full relative my-3">
-        <p class="text-lg text-gray-400 leading-10 text-justify">
-          Disabling feedback is available only for sellers with VIP and VIP+
-          subscription.
+        <p class="text-lg text-gray-600 leading-10 text-justify">
+          Account deactivation means to delete your account:
+        </p>
+
+        <p class="text-lg text-gray-600 text-justify">
+          You will not be able to log in to your profile anymore and all your
+          account history will be deleted without the possibility to restore
         </p>
       </div>
 
-      <div class="w-full relative my-3">
+      <div class="w-full relative my-3 flex justify-center">
         <div
           style="cursor: pointer"
-          class="w-full lg:w-1/3 market flex items-center justify-center border rounded-md border-explorerGreen-300 h-10 hover:bg-gray-100"
+          class="w-full lg:w-2/4 market py-6 flex items-center justify-center rounded-md h-10 bg-red-500 hover:bg-red-700"
         >
           <button
             style="outline: none"
             type="button"
-            class="text-sm px-1 text-explorerGreen-300"
+            class="text-md px-3 text-white font-semibold"
           >
-            <span> Subscribe and turn off feedback</span>
+            <span> CONTINUE TO DELETE MY ACCOUNT</span>
           </button>
         </div>
       </div>

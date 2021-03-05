@@ -77,6 +77,18 @@ const routes = [
             name: "notification-settings",
             component: () => import("@/components/profile/settings/NotificationSettings"),
           },
+
+          {
+            path: "change-password",
+            name: "change-password",
+            component: () => import("@/components/profile/settings/ChangePassword"),
+          },
+
+          {
+            path: "manage-account",
+            name: "manage-account",
+            component: () => import("@/components/profile/settings/ManageAccount"),
+          },
         ],
       },
     ],
