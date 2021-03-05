@@ -100,7 +100,7 @@
           </li>
           <li class="w-full border-b border-gray-200">
             <router-link
-              :to="{ name: 'Home' }"
+              :to="{ name: 'chat-settings' }"
               class="w-full flex items-center justify-between px-3 py-3"
             >
               <span class="text-gray-600 tracking-tight text-sm"
@@ -124,7 +124,7 @@
           </li>
           <li class="w-full border-b border-gray-200">
             <router-link
-              :to="{ name: 'Home' }"
+              :to="{ name: 'feedback-settings' }"
               class="w-full flex items-center justify-between px-3 py-3"
             >
               <span class="text-gray-600 tracking-tight text-sm"
@@ -152,7 +152,7 @@
         <ul>
           <li class="w-full border-b border-gray-200">
             <router-link
-              :to="{ name: 'Home' }"
+              :to="{ name: 'social-networks' }"
               class="w-full flex items-center justify-between px-3 py-3"
             >
               <span class="text-gray-600 tracking-tight text-sm"
@@ -176,7 +176,7 @@
           </li>
           <li class="w-full border-b border-gray-200">
             <router-link
-              :to="{ name: 'Home' }"
+              :to="{ name: 'notification-settings' }"
               class="w-full flex items-center justify-between px-3 py-3"
             >
               <span class="text-gray-600 tracking-tight text-sm"

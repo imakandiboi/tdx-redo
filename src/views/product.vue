@@ -1,5 +1,5 @@
 <template>
-  <div class="container mx-auto px-4 py-24 lg:py-0 md:px-10 xl:px-32 mt-4">
+  <div class="container mx-auto px-4 py-24 lg:py-0 md:px-10 xl:px-20 mt-4">
     <div class="grid">
       <ol class="pt-2 pb-3">
         <li class="text-gray-700">
