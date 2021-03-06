@@ -26,7 +26,7 @@
               :class="
                 selectedTab === tab.component ? 'text-explorerGreen-300' : ''
               "
-              ><router-link :to="{ name: 'Settings' }">{{
+              ><router-link :to="{ name: tab.route }">{{
                 tab.name
               }}</router-link></span
             >

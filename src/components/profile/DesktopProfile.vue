@@ -1,6 +1,8 @@
 <template>
   <div class="mt-12">
-    <div class="w-11/12 mx-auto px-12 pb-12 grid grid-flow-col grid-cols-6 gap-8 space-x-4">
+    <div
+      class="w-11/12 mx-auto px-12 pb-12 grid grid-flow-col grid-cols-6 gap-8 space-x-4"
+    >
       <div class="col-span-2">
         <ProfileSidebar
           :tabs="tabs"
@@ -44,7 +46,7 @@ export default {
         {
           name: "Make money on tradexplora",
           type: "link",
-          route: "AdvertTabComponent",
+          route: "SellingInfo",
           icon: "money.svg",
         },
         {
