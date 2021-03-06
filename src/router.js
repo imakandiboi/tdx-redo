@@ -26,6 +26,11 @@ const routes = [
         component: () => import("@/components/profile/ProfileComponent.vue"),
       },
       {
+        path: "/profile/selling_info",
+        name: "SellingInfo",
+        component: () => import("@/components/profile/SellingInfoComponent.vue"),
+      },
+      {
         path: "/profile/settings",
         // name: "Settings",
         component: () => import("@/views/settings.vue"),
