@@ -102,7 +102,7 @@
           />
         </div>
         <div class="mt-4">
-          <p class="text-xs text-gray-700 my-2 w-auto sm:w-8/12">
+          <p class="text-xs text-gray-700 my-2 w-auto sm:w-8/12  ">
             Think of your strongest skills that could be useful to someone else;
             perhaps you can sew, drive a truck, tutor kids, or anything else.
           </p>
