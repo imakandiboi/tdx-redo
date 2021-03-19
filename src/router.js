@@ -31,6 +31,11 @@ const routes = [
         component: () => import("@/components/profile/SellingInfoComponent.vue"),
       },
       {
+        path: "/profile/selling_info/how_to_sell",
+        name: "Howtosell",
+        component: () => import("@/components/profile/Howtosell.vue"),
+      },
+      {
         path: "/profile/settings",
         // name: "Settings",
         component: () => import("@/views/settings.vue"),

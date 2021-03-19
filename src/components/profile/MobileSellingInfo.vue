@@ -82,11 +82,12 @@
             >
               Sell
             </button>
-            <button
-              class="w-1/2 border-2 border-explorerGreen-300 rounded text-explorerGreen-300 px-4 py-3 text-xs focus:outline-none"
+            <router-link
+              :to="{ name: 'Howtosell' }"
+              class="w-1/2 border-2 border-explorerGreen-300 rounded text-center text-explorerGreen-300 px-4 py-3 text-xs focus:outline-none"
             >
               How to sell on tradex
-            </button>
+            </router-link>
           </div>
         </div>
       </div>
@@ -102,7 +103,7 @@
           />
         </div>
         <div class="mt-4">
-          <p class="text-xs text-gray-700 my-2 w-auto sm:w-8/12  ">
+          <p class="text-xs text-gray-700 my-2 w-auto sm:w-8/12">
             Think of your strongest skills that could be useful to someone else;
             perhaps you can sew, drive a truck, tutor kids, or anything else.
           </p>
@@ -123,11 +124,12 @@
             >
               Post an advert
             </button>
-            <button
-              class="w-1/2 border-2 border-explorerGreen-300 rounded text-explorerGreen-300 px-4 py-3 text-xs focus:outline-none"
+            <router-link
+              :to="{ name: 'Howtosell' }"
+              class="w-1/2 border-2 border-explorerGreen-300 text-center rounded text-explorerGreen-300 px-4 py-3 text-xs focus:outline-none"
             >
               How to sell on tradex
-            </button>
+            </router-link>
           </div>
         </div>
       </div>
