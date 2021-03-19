@@ -60,7 +60,8 @@ export default {
       if (
         this.$route.name === "Settings" ||
         this.$route.name === "ProfileDefault" ||
-        this.$route.name === "SellingInfo"
+        this.$route.name === "SellingInfo" ||
+        this.$route.name === "Howtosell"
       ) {
         this.showNav = false;
       } else {
