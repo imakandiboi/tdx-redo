@@ -43,14 +43,12 @@ const routes = [
           {
             path: "contact-details",
             name: "contact-details",
-            component: () =>
-              import("@/components/profile/settings/ContactDetails"),
+            component: () => import("@/components/profile/settings/ContactDetails"),
           },
           {
             path: "company-details",
             name: "company-details",
-            component: () =>
-              import("@/components/profile/settings/CompanyDetails"),
+            component: () => import("@/components/profile/settings/CompanyDetails"),
           },
 
           {
@@ -102,6 +100,16 @@ const routes = [
     path: "/search",
     name: "Search",
     component: () => import("@/views/search.vue"),
+  },
+  {
+    path: "/plan",
+    name: "plan",
+    component: () => import("@/views/plan.vue"),
+  },
+  {
+    path: "/plan/Premium",
+    name: "Premium",
+    component: () => import("@/components/plan/Premium.vue"),
   },
 ];
 
