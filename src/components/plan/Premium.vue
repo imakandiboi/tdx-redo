@@ -2,7 +2,7 @@
   <div
     class="w-full h-full landing bg-gradient-to-b from-explorerGreen-300 to-explorerGreen-500"
   >
-    <div>
+    <div class="pt-10">
       <div class="bg-white w-1/2 sm:w-full mx-auto justify-center premium-box">
         <div class="premium-box-title text-center">
           <span>

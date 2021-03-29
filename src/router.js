@@ -105,11 +105,19 @@ const routes = [
     path: "/plan",
     name: "plan",
     component: () => import("@/views/plan.vue"),
-  },
-  {
-    path: "/plan/Premium",
-    name: "Premium",
-    component: () => import("@/components/plan/Premium.vue"),
+    redirect: "/plan/premium",
+    children: [
+      {
+        path: "/plan/Premium",
+        name: "Premium",
+        component: () => import("@/components/plan/Premium.vue"),
+      },
+      {
+        path: "/Property",
+        name: "Property",
+        component: () => import("@/components/plan/Property.vue"),
+      },
+    ],
   },
 ];
 

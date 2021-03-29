@@ -7,7 +7,7 @@
         </div>
         <div class="justify-center flex block">
           <div class="w-96 h-40 py-4 flex justify-center justify-around mb-12">
-            <router-link to="{name:'premiumProperty'}">
+            <router-link :to="{ name: 'Property' }">
               <div class="w-28 h-28 bg-white px-2 rounded">
                 <span class="">
                   <svg
