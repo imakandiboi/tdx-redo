@@ -115,7 +115,7 @@ export default {
 
 <style lang="css" scoped>
 .landing {
-  height: 90vh;
+  height: 70vh;
 }
 .premium-box {
   width: 30%;

@@ -117,6 +117,16 @@ const routes = [
         name: "Property",
         component: () => import("@/components/plan/Property.vue"),
       },
+      {
+        path: "/Cars",
+        name: "Cars",
+        component: () => import("@/components/plan/Cars.vue"),
+      },
+      {
+        path: "/Others",
+        name: "Others",
+        component: () => import("@/components/plan/Others.vue"),
+      },
     ],
   },
 ];
